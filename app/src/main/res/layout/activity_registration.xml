@@ -7,14 +7,14 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <TextView android:id="@+id/tvHeading"
+        <TextView android:id="@+id/tvHeadingReg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
             android:layout_marginLeft="35dp"
             android:textSize="25sp"
             android:textColorHint="@android:color/black"
-            android:hint="@string/text_tvHeadingReg"/>
+            android:hint="@string/text_tvHeadingReg" />
 
         <ScrollView
             android:layout_width="match_parent"
@@ -24,7 +24,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:padding="35dp">
+                android:paddingHorizontal="35dp"
+                android:paddingBottom="90dp"
+                android:paddingTop="30dp">
 
                 <EditText android:id="@+id/etName"
                     style="@style/styleEditText"
@@ -107,13 +109,22 @@
                     android:textSize="20sp"
                     android:textColorHint="@android:color/black"
                     android:hint="@string/text_tvUserAgr"/>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:layout_gravity="center"
+                    android:textSize="16sp"
+                    android:textColorHint="@android:color/black"
+                    android:checked="true"
+                    android:hint="@string/hint_rbAgree"/>
             </LinearLayout>
         </ScrollView>
     </LinearLayout>
 
     <Button android:id="@+id/btnDone"
         style = "@style/styleButton"
-        android:background="@drawable/button"
         android:hint="@string/hint_btnDone"
         android:layout_marginHorizontal="35dp"
         android:layout_gravity="bottom"
