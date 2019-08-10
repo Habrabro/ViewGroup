@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">ViewGroup</string>
+
+    <string name="text_tvHeading">Login</string>
+
+    <string name="hint_etLogin">Login</string>
+    <string name="hint_etPassword">Password</string>
+    <string name="hint_rbClient">Client</string>
+    <string name="hint_rbCustomer">Customer</string>
+    <string name="hint_btnLogin">LOGIN</string>
+    <string name="hint_btnRegistration">REGISTRATION</string>
 </resources>
