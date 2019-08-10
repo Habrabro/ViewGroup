@@ -1,12 +1,32 @@
 <resources>
     <string name="app_name">ViewGroup</string>
 
-    <string name="text_tvHeading">Login</string>
+<!-- text_ -->
+    <!-- activity_login -->
+    <string name="text_tvHeadingLogin">Login</string>
 
-    <string name="hint_etLogin">Login</string>
-    <string name="hint_etPassword">Password</string>
+    <!-- activity_registration -->
+    <string name="text_tvHeadingReg">Registration</string>
+    <string name="text_tvQuestion">Are you smoking?</string>
+    <string name="text_tvUserAgrHeading">User agreements</string>
+    <string name="text_tvUserAgr">Simple text Simple text Simple text Simple text Simple text Simple text Simple text Simple text Simple text Simple text Simple text Simple text Simple text Simple text Simple text Simple text Simple text Simple text Simple text Simple text Simple text Simple text Simple text Simple text Simple text Simple text Simple text Simple text Simple text Simple text </string>
+
+
+<!-- hint_ -->
     <string name="hint_rbClient">Client</string>
     <string name="hint_rbCustomer">Customer</string>
+    <string name="hint_etPassword">Password</string>
+
+    <!-- activity_login -->
+    <string name="hint_etLogin">Login</string>
     <string name="hint_btnLogin">LOGIN</string>
     <string name="hint_btnRegistration">REGISTRATION</string>
+
+    <!-- activity_registration -->
+    <string name="hint_etName">Name</string>
+    <string name="hint_rbYes">Yes</string>
+    <string name="hint_rbNo">No</string>
+    <string name="hint_etAddress">Address</string>
+    <string name="hint_rbAgree">Agree with user agreements</string>
+    <string name="hint_btnDone">DONE</string>
 </resources>

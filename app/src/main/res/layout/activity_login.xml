@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:paddingHorizontal="40dp"
-    android:paddingTop="70dp"
-    android:paddingBottom="30dp">
+    android:padding="25sp" >
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -15,8 +13,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="25dp"
+            android:layout_marginTop="15dp"
             android:textColorHint="@android:color/black"
-            android:hint="@string/text_tvHeading"/>
+            android:hint="@string/text_tvHeadingLogin"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -28,20 +27,22 @@
                 style="@style/styleEditText"
                 android:hint="@string/hint_etLogin"/>
 
-            <EditText android:id="@+id/etPassword"
+            <EditText android:id="@+id/etPasswordLogin"
                 style="@style/styleEditText"
                 android:hint="@string/hint_etPassword"/>
 
             <RadioGroup
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_marginTop="13dp">
 
-                <RadioButton android:id="@+id/rbClient"
+                <RadioButton android:id="@+id/rbClientLogin"
                     style = "@style/styleRadioButton"
+                    android:checked="true"
                     android:hint="@string/hint_rbClient"/>
 
-                <RadioButton android:id="@+id/rbCustomer"
+                <RadioButton android:id="@+id/rbCustomerLogin"
                     style = "@style/styleRadioButton"
                     android:layout_marginLeft="15dp"
                     android:hint="@string/hint_rbCustomer"/>
@@ -55,13 +56,16 @@
             android:orientation="vertical">
 
             <Button android:id="@+id/btnLogin"
-                style = "@style/styleButton"
+                style="@style/styleButton"
+                android:background="@drawable/button"
                 android:hint="@string/hint_btnLogin"/>
 
             <Button android:id="@+id/btnRegistration"
                 style = "@style/styleButton"
+                android:background="@drawable/button"
                 android:layout_marginTop="10dp"
-                android:hint="@string/hint_btnRegistration"/>
+                android:hint="@string/hint_btnRegistration"
+                android:onClick="openRegistrationActivity"/>
         </LinearLayout>
     </RelativeLayout>
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
