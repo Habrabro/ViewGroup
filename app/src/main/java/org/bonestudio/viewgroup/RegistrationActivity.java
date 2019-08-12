@@ -12,7 +12,11 @@ public class RegistrationActivity extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registration);
+    }
 
-
+    public void closeRegistrationActivity(View view)
+    {
+        Intent intent = new Intent(this, LoginActivity.class);
+        finish();
     }
 }

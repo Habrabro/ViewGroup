@@ -1,28 +1,26 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorPrimary</item>
+        <item name="editTextStyle">@style/styleEditText</item>
+        <item name="radioButtonStyle">@style/styleRadioButton</item>
+        <item name="buttonStyle">@style/styleButton</item>
     </style>
 
-    <style name = "styleEditText">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="backgroundTint">@color/colorPrimary</item>
+    <style name = "styleEditText" parent="android:Widget.EditText">
+        <item name="android:backgroundTint">@color/colorPrimary</item>
+        <item name="android:textAlignment">viewStart</item>
     </style>
 
-    <style name = "styleRadioButton">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">match_parent</item>
+    <style name = "styleRadioButton" parent="android:Widget.CompoundButton.RadioButton">
         <item name = "android:textColorHint">@android:color/black</item>
     </style>
 
-    <style name = "styleButton">
-        <item name = "android:layout_width">match_parent</item>
-        <item name = "android:layout_height">40dp</item>
+    <style name = "styleButton" parent="android:Widget.ActionButton">
         <item name = "android:textColorHint">@android:color/white</item>
         <item name = "android:textSize">15sp</item>
         <item name = "android:background">@drawable/button</item>
